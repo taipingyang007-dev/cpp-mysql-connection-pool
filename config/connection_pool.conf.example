@@ -1,0 +1,14 @@
+# MySQL 配置
+# 默认用于宿主机本地运行：
+# 启动 docker compose 中的 mysql_db 后，通过映射端口访问 127.0.0.1:3306。
+# mysql_db 是 Docker Compose 网络里的服务名，不是宿主机本地运行时应使用的地址。
+ip=127.0.0.1
+port=3306
+username=connection_pool_app
+password=wang112233
+dbname=connection_pool_dev
+
+# 连接池配置
+initSize=10
+maxSize=1024
+connectionTimeout=1000
