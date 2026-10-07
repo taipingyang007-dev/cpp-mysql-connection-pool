@@ -3,6 +3,8 @@ cmake_minimum_required(VERSION 3.10)
 # 定义项目名称和使用语言
 project(connection_pool LANGUAGES CXX)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # 明确指定使用 C++11 标准
 set(CMAKE_CXX_STANDARD 11)
 
